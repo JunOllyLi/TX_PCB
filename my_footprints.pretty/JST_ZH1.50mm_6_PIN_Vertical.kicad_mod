@@ -1,0 +1,185 @@
+(footprint "JST_ZH1.50mm_6_PIN_Vertical"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "JST-ZH")
+	(tags "connector JST ZH vertical")
+	(property "Reference" "REF**"
+		(at 1.5 6.5 0)
+		(layer "F.SilkS")
+		(uuid "b604b8df-3bee-4bd6-aa71-8c22c20fe297")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "JST_ZH1.50mm_6_PIN_Vertical"
+		(at 0 5.15 0)
+		(layer "F.Fab")
+		(uuid "5c6fd61d-7ca7-47e1-94fc-e558a08efb4b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9eac02e6-3da0-4a3e-886a-264f9c987f88")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f6777c88-3e4d-4b7d-b91f-f6bfc6adfdec")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5fd85126-9c47-41eb-9989-2550f720e7be")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -4.55 0)
+		(end -4.55 5.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "9c5e1652-f913-4f4d-9538-669ae3dd8076")
+	)
+	(fp_line
+		(start -4.55 5.5)
+		(end 9.05 5.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "3a86d4bd-3eb8-41be-a089-cd1b07901931")
+	)
+	(fp_line
+		(start 9.05 0)
+		(end -4.55 0)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "452e07fe-6514-4408-a560-9edbab51cc05")
+	)
+	(fp_line
+		(start 9.05 5.5)
+		(end 9.05 0)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "8a799215-c0bc-4cb3-9893-9739c5a642b9")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 1.5 8 0)
+		(layer "F.Fab")
+		(uuid "0341789a-e181-48bb-ad13-3d2ad1da20a5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -1.5 3.35)
+		(size 0.8 3.7)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "be0b8a60-74d7-4c46-b48e-acdf3627561f")
+	)
+	(pad "2" smd roundrect
+		(at 0 3.35)
+		(size 0.8 3.7)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "d8716087-10ae-4ed7-a6e1-976ce11f3cd5")
+	)
+	(pad "3" smd roundrect
+		(at 1.5 3.35)
+		(size 0.8 3.7)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "3fce5cee-177f-4c00-864f-c566fcba62b2")
+	)
+	(pad "4" smd roundrect
+		(at 3 3.35)
+		(size 0.8 3.7)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "381c625a-e641-40dc-b54c-d611906b19f3")
+	)
+	(pad "5" smd roundrect
+		(at 4.5 3.35)
+		(size 0.8 3.7)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "9ca51521-a489-4dd1-b618-198681a7c27b")
+	)
+	(pad "6" smd roundrect
+		(at 6 3.35)
+		(size 0.8 3.7)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "bba404f5-348c-429b-9305-13ed55b2871c")
+	)
+	(pad "MP" smd roundrect
+		(at -3.55 1.75)
+		(size 1.5 2.3)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.138889)
+		(uuid "60ab1d47-34c1-41b1-954d-56ca1c45b119")
+	)
+	(pad "MP" smd roundrect
+		(at 8.05 1.75)
+		(size 1.5 2.3)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.138889)
+		(uuid "78f65991-7ba2-4794-a8b2-b654d8ab0833")
+	)
+	(model "${KICAD8_3DMODEL_DIR}/Connector_JST.3dshapes/JST_ZE_BM03B-ZESS-TBT_1x03-1MP_P1.50mm_Vertical.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
