@@ -2705,12 +2705,6 @@
 		(uuid "45da7d8b-0677-41b5-a1d4-50c40fa4a6fc")
 	)
 	(junction
-		(at 265.43 35.56)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "45fd8438-f26b-40f6-aca9-911ab06cba92")
-	)
-	(junction
 		(at 185.42 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2805,12 +2799,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ad15f9ab-853a-45df-a949-6b2f8249f4b0")
-	)
-	(junction
-		(at 265.43 33.02)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bbb04567-2709-42f8-8506-4bc970937431")
 	)
 	(junction
 		(at 24.13 54.61)
@@ -2929,16 +2917,6 @@
 			(type default)
 		)
 		(uuid "0fc9f3ae-8b33-496c-b5e0-96086ec1a5ce")
-	)
-	(wire
-		(pts
-			(xy 265.43 30.48) (xy 265.43 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1089416d-28a8-407a-a3d4-f97d0b9313a0")
 	)
 	(wire
 		(pts
@@ -3882,7 +3860,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 138.43) (xy 106.68 138.43)
+			(xy 95.25 138.43) (xy 120.65 138.43)
 		)
 		(stroke
 			(width 0)
@@ -4122,16 +4100,6 @@
 	)
 	(wire
 		(pts
-			(xy 265.43 33.02) (xy 265.43 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bb99e588-8f53-4613-b7ab-0e9a62a17c94")
-	)
-	(wire
-		(pts
 			(xy 241.3 93.98) (xy 265.43 93.98)
 		)
 		(stroke
@@ -4169,16 +4137,6 @@
 			(type default)
 		)
 		(uuid "c78488ba-6f45-4be6-863c-50df56ef3f93")
-	)
-	(wire
-		(pts
-			(xy 265.43 35.56) (xy 265.43 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c9e31291-0071-4667-a22d-1064ae57b1d5")
 	)
 	(wire
 		(pts
@@ -4484,7 +4442,7 @@
 		)
 		(uuid 33f38096-81a2-4730-86f0-3545d06aeac2)
 	)
-	(text_box "LEDs:\n	VBUS -> CHARGING\n	VBUS -> CHG_DONE\n	PWR_EN -> GND\n	4IN1_LED -> GND\n	ELST_LED -> GND\n	PPM_RX_LED -> GND\n"
+	(text_box "LEDs:\n	VBUS -> CHARGING\n	VBUS -> CHG_DONE\n	PWR_EN -> GND\n	INT_PROTO_LED -> GND\n	INTMOD_LED -> GND\n	EXTMOD_LED -> GND\n"
 		(exclude_from_sim no)
 		(at 213.36 106.68 0)
 		(size 30.48 16.51)
@@ -5579,7 +5537,7 @@
 		(uuid "fdb36779-51ed-4c1f-8954-ac98f32c0517")
 	)
 	(global_label "PWR_SW_ON"
-		(shape input)
+		(shape bidirectional)
 		(at 265.43 43.18 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5590,7 +5548,7 @@
 		)
 		(uuid "1907265d-3c6e-46d4-8707-bf238bd9d675")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 251.1963 43.18 0)
+			(at 250.085 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5600,7 +5558,7 @@
 			)
 		)
 	)
-	(global_label "PPM_RX_LED"
+	(global_label "INT_PROTO_LED"
 		(shape input)
 		(at 190.5 110.49 180)
 		(fields_autoplaced yes)
@@ -5612,7 +5570,7 @@
 		)
 		(uuid "1e8f89be-1d23-46be-92dd-ad8fed3e31f6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 175.6616 110.49 0)
+			(at 173.061 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5644,6 +5602,28 @@
 			)
 		)
 	)
+	(global_label "INT_PROTO_LED"
+		(shape output)
+		(at 128.27 138.43 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3b573a28-9c2e-4cff-8063-0223d3f0b398")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 145.709 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "VBUS"
 		(shape input)
 		(at 256.54 116.84 180)
@@ -5667,7 +5647,7 @@
 		)
 	)
 	(global_label "5V_PWR_EN"
-		(shape input)
+		(shape output)
 		(at 106.68 130.81 0)
 		(fields_autoplaced yes)
 		(effects
@@ -5688,29 +5668,7 @@
 			)
 		)
 	)
-	(global_label "4IN1_EN"
-		(shape input)
-		(at 106.68 138.43 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "52d23c6c-63f5-4380-bade-ee6c89c2ae48")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 117.4666 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "PPM_O"
+	(global_label "EXTMOD_RX"
 		(shape input)
 		(at 257.81 91.44 180)
 		(fields_autoplaced yes)
@@ -5722,7 +5680,7 @@
 		)
 		(uuid "54abd2e9-234a-4c42-8674-5dbd93b22c76")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 248.5353 91.44 0)
+			(at 243.9997 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5732,8 +5690,8 @@
 			)
 		)
 	)
-	(global_label "PPM_I"
-		(shape input)
+	(global_label "EXTMOD_TX"
+		(shape output)
 		(at 257.81 88.9 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5744,7 +5702,7 @@
 		)
 		(uuid "5e591fde-5cb6-4502-9c16-b50db7984ff7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 249.261 88.9 0)
+			(at 244.3021 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5798,8 +5756,8 @@
 			)
 		)
 	)
-	(global_label "ELRS_BOOT"
-		(shape input)
+	(global_label "INTMOD_BOOT"
+		(shape output)
 		(at 106.68 135.89 0)
 		(fields_autoplaced yes)
 		(effects
@@ -5810,7 +5768,7 @@
 		)
 		(uuid "79d47b54-81c1-46ba-b14b-9d3940a4267e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 120.188 135.89 0)
+			(at 122.4862 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5843,7 +5801,7 @@
 		)
 	)
 	(global_label "ESP32_BOOT"
-		(shape input)
+		(shape output)
 		(at 262.89 96.52 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5864,7 +5822,7 @@
 			)
 		)
 	)
-	(global_label "4IN1_LED"
+	(global_label "EXTMOD_LED"
 		(shape input)
 		(at 190.5 100.33 180)
 		(fields_autoplaced yes)
@@ -5876,7 +5834,7 @@
 		)
 		(uuid "8261a33c-ce9e-4ad1-b012-a76b7c61b1d0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 178.7458 100.33 0)
+			(at 175.7221 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5908,7 +5866,7 @@
 			)
 		)
 	)
-	(global_label "ELRS_LED"
+	(global_label "INTMOD_LED"
 		(shape input)
 		(at 190.5 97.79 180)
 		(fields_autoplaced yes)
@@ -5920,7 +5878,7 @@
 		)
 		(uuid "91e84326-2134-47b6-9a23-a47abaaef6e9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 178.4435 97.79 0)
+			(at 176.1453 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5931,7 +5889,7 @@
 		)
 	)
 	(global_label "~{PWR_SW_DET}"
-		(shape input)
+		(shape bidirectional)
 		(at 265.43 40.64 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5942,29 +5900,7 @@
 		)
 		(uuid "9a43e5a1-a3fe-47f7-a542-b703772ad690")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 250.4707 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "PPM_RX_5V"
-		(shape input)
-		(at 265.43 30.48 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "9a49d182-64c7-4216-b5c2-1508e47a0b6e")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 251.7406 30.48 0)
+			(at 249.3594 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6019,7 +5955,7 @@
 		)
 	)
 	(global_label "SDA"
-		(shape input)
+		(shape bidirectional)
 		(at 54.61 39.37 180)
 		(fields_autoplaced yes)
 		(effects
@@ -6030,7 +5966,7 @@
 		)
 		(uuid "a4b4382d-5bb2-4832-a028-d0f7b04993bc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 48.0567 39.37 0)
+			(at 46.9454 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6040,8 +5976,8 @@
 			)
 		)
 	)
-	(global_label "PPM_RX_EN"
-		(shape input)
+	(global_label "EXTMOD_EN"
+		(shape output)
 		(at 106.68 143.51 0)
 		(fields_autoplaced yes)
 		(effects
@@ -6052,7 +5988,7 @@
 		)
 		(uuid "b2602e8b-5d84-4daa-90ba-2bfc0c197bfe")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 120.5508 143.51 0)
+			(at 120.4903 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6085,7 +6021,7 @@
 		)
 	)
 	(global_label "SDA"
-		(shape input)
+		(shape bidirectional)
 		(at 49.53 125.73 180)
 		(fields_autoplaced yes)
 		(effects
@@ -6096,7 +6032,7 @@
 		)
 		(uuid "b5fb02db-841b-429a-9ad3-5e91435ddcff")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 42.9767 125.73 0)
+			(at 41.8654 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6129,7 +6065,7 @@
 		)
 	)
 	(global_label "PWR_EN"
-		(shape input)
+		(shape output)
 		(at 106.68 140.97 0)
 		(fields_autoplaced yes)
 		(effects
@@ -6217,7 +6153,7 @@
 		)
 	)
 	(global_label "PWR_SW_ON"
-		(shape input)
+		(shape output)
 		(at 205.74 143.51 0)
 		(fields_autoplaced yes)
 		(effects
@@ -6239,7 +6175,7 @@
 		)
 	)
 	(global_label "RXD0"
-		(shape input)
+		(shape output)
 		(at 260.35 99.06 180)
 		(fields_autoplaced yes)
 		(effects
@@ -6260,8 +6196,8 @@
 			)
 		)
 	)
-	(global_label "ELRS_EN"
-		(shape input)
+	(global_label "INTMOD_EN"
+		(shape output)
 		(at 106.68 133.35 0)
 		(fields_autoplaced yes)
 		(effects
@@ -6272,7 +6208,7 @@
 		)
 		(uuid "ec7386eb-781a-4dde-a457-4417025ee87c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 117.7689 133.35 0)
+			(at 120.0671 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6283,7 +6219,7 @@
 		)
 	)
 	(global_label "SDA"
-		(shape input)
+		(shape bidirectional)
 		(at 190.5 105.41 180)
 		(fields_autoplaced yes)
 		(effects
@@ -6294,7 +6230,7 @@
 		)
 		(uuid "ef2c5525-d165-4dd5-85c7-7998939e225f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 183.9467 105.41 0)
+			(at 182.8354 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6305,7 +6241,7 @@
 		)
 	)
 	(global_label "~{PWR_SW_DET}"
-		(shape input)
+		(shape output)
 		(at 251.46 144.78 0)
 		(fields_autoplaced yes)
 		(effects
@@ -8340,6 +8276,73 @@
 			(project "TX"
 				(path "/f9f54452-72bc-42e0-a85c-2b2c5cedd536/b1aced65-cda0-4d30-b2f4-6d0180c9f383"
 					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 124.46 138.43 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d6070da2-fb6f-43d3-a3e6-ebdf4d063c01")
+		(property "Reference" "R14"
+			(at 124.46 140.97 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1K"
+			(at 124.46 143.002 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 124.714 137.414 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 124.46 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 124.46 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "97578fa5-bd6e-4161-afda-4b96a01a3ed0")
+		)
+		(pin "2"
+			(uuid "88a90bd8-94c2-4d27-b0be-5886f9bde4c7")
+		)
+		(instances
+			(project "Muffin-Core"
+				(path "/f9f54452-72bc-42e0-a85c-2b2c5cedd536/b1aced65-cda0-4d30-b2f4-6d0180c9f383"
+					(reference "R14")
 					(unit 1)
 				)
 			)

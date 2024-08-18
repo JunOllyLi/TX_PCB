@@ -36,7 +36,7 @@
 			)
 		)
 		(instances
-			(project "TX"
+			(project "Muffin-Core"
 				(path "/f9f54452-72bc-42e0-a85c-2b2c5cedd536"
 					(page "5")
 				)
@@ -74,7 +74,7 @@
 			)
 		)
 		(instances
-			(project "TX"
+			(project "Muffin-Core"
 				(path "/f9f54452-72bc-42e0-a85c-2b2c5cedd536"
 					(page "4")
 				)
@@ -112,7 +112,7 @@
 			)
 		)
 		(instances
-			(project "TX"
+			(project "Muffin-Core"
 				(path "/f9f54452-72bc-42e0-a85c-2b2c5cedd536"
 					(page "3")
 				)
@@ -150,7 +150,7 @@
 			)
 		)
 		(instances
-			(project "TX"
+			(project "Muffin-Core"
 				(path "/f9f54452-72bc-42e0-a85c-2b2c5cedd536"
 					(page "2")
 				)
