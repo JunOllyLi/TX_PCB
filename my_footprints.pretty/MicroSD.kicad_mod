@@ -238,4 +238,15 @@
 		(thermal_bridge_angle 45)
 		(uuid "691a6d6f-de03-457b-8ee1-d9d340a09faa")
 	)
+	(model "SD_slot v4.step"
+		(offset
+			(xyz 0 7.3 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 180)
+		)
+	)
 )

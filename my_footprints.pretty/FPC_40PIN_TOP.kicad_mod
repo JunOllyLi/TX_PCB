@@ -395,4 +395,15 @@
 		(thermal_bridge_angle 45)
 		(uuid "ab75b42b-04df-4fe8-8e4f-ec2c11796895")
 	)
+	(model "FPC_40PIN_TOP.stp"
+		(offset
+			(xyz 0 0.5 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 -90)
+		)
+	)
 )

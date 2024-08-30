@@ -1,0 +1,203 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "f9f54452-72bc-42e0-a85c-2b2c5cedd536")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 76.2 66.04)
+		(size 12.7 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "0846d409-06c6-48a9-9ebd-55690c5ee116")
+		(property "Sheetname" "ESP32 Core"
+			(at 76.2 65.3284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "esp32.kicad_sch"
+			(at 76.2 70.4346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Muffin"
+				(path "/f9f54452-72bc-42e0-a85c-2b2c5cedd536"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 77.47 53.34)
+		(size 12.7 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "250a92ee-65cc-4212-89d0-085fb195d4e4")
+		(property "Sheetname" "Power"
+			(at 77.47 52.6284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 77.47 57.7346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Muffin"
+				(path "/f9f54452-72bc-42e0-a85c-2b2c5cedd536"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 76.2 77.47)
+		(size 12.7 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "5dee6413-7982-446b-aa7d-e7d46b5a7105")
+		(property "Sheetname" "USB and ADC"
+			(at 76.2 76.7584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "usb_adc.kicad_sch"
+			(at 76.2 81.8646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Muffin"
+				(path "/f9f54452-72bc-42e0-a85c-2b2c5cedd536"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 74.93 109.22)
+		(size 12.7 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "87ec6946-1795-40bd-842a-60e79a96f8b4")
+		(property "Sheetname" "Audio"
+			(at 74.93 108.5084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "audio.kicad_sch"
+			(at 74.93 113.6146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Muffin"
+				(path "/f9f54452-72bc-42e0-a85c-2b2c5cedd536"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 76.2 92.71)
+		(size 12.7 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "fee0daa9-678e-4400-86f8-80044c347af5")
+		(property "Sheetname" "GPIO_ext"
+			(at 76.2 91.9984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "GPIO.kicad_sch"
+			(at 76.2 97.1046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Muffin"
+				(path "/f9f54452-72bc-42e0-a85c-2b2c5cedd536"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)
