@@ -4541,16 +4541,6 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 120.65) (xy 30.48 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "20d7160e-346a-408b-bdf0-5e526536577a")
-	)
-	(wire
-		(pts
 			(xy 204.47 74.93) (xy 204.47 82.55)
 		)
 		(stroke
@@ -4738,16 +4728,6 @@
 			(type default)
 		)
 		(uuid "320fc24d-44f8-42dd-a3b3-d985962493ce")
-	)
-	(wire
-		(pts
-			(xy 57.15 120.65) (xy 30.48 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3216f426-7113-4c37-94b1-ebad88a72c3e")
 	)
 	(wire
 		(pts
@@ -5221,16 +5201,6 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 124.46) (xy 40.64 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6cb9b372-5c55-4ee2-85aa-eb1a27ff1f18")
-	)
-	(wire
-		(pts
 			(xy 88.9 123.19) (xy 95.25 123.19)
 		)
 		(stroke
@@ -5258,16 +5228,6 @@
 			(type default)
 		)
 		(uuid "7a57694c-43d0-4067-9d4c-14aa59376b5e")
-	)
-	(wire
-		(pts
-			(xy 21.59 132.08) (xy 40.64 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7a9a9670-ff39-45da-a931-2fc3b9a29b73")
 	)
 	(wire
 		(pts
@@ -6206,17 +6166,6 @@
 		)
 		(uuid "0858f233-bd50-460c-97eb-46342a11a64a")
 	)
-	(label "GIMBAL_RX"
-		(at 27.94 129.54 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0ab72e1a-2179-48bf-ad8e-198d9f3b0d6d")
-	)
 	(label "LCD_RS"
 		(at 250.19 43.18 0)
 		(fields_autoplaced yes)
@@ -6459,17 +6408,6 @@
 		)
 		(uuid "5d854fcc-b6a4-4eb6-b2e9-abb398b3a5ab")
 	)
-	(label "GIMBAL_TX"
-		(at 27.94 127 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "63bd38b7-ac72-4bbb-b5f3-499f3f86405e")
-	)
 	(label "LCD_D2"
 		(at 49.53 76.2 0)
 		(fields_autoplaced yes)
@@ -6491,6 +6429,17 @@
 			(justify left bottom)
 		)
 		(uuid "696d69a5-347d-4c25-9f74-95a40ebc9076")
+	)
+	(label "GIMBAL_RX"
+		(at 27.94 127 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6a33eb5c-d27d-4593-afcd-bbfc9a54c72d")
 	)
 	(label "LCD_D1"
 		(at 250.19 63.5 0)
@@ -6645,6 +6594,17 @@
 			(justify left bottom)
 		)
 		(uuid "d130896c-da73-4dcd-b360-abc7dcc2181a")
+	)
+	(label "GIMBAL_TX"
+		(at 27.94 129.54 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d8dcb3d6-fe38-46af-b5b7-2fec6357b5d8")
 	)
 	(label "TOUCH_INT"
 		(at 195.58 69.85 0)
@@ -7451,7 +7411,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 57.15 120.65 0)
+		(at 40.64 132.08 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7460,7 +7420,7 @@
 		(fields_autoplaced yes)
 		(uuid "0063e61a-e12a-4079-82fb-dff73949dde4")
 		(property "Reference" "#PWR045"
-			(at 57.15 127 0)
+			(at 40.64 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7469,7 +7429,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 57.15 125.73 0)
+			(at 40.64 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7477,7 +7437,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 57.15 120.65 0)
+			(at 40.64 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7486,7 +7446,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 57.15 120.65 0)
+			(at 40.64 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7495,7 +7455,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 57.15 120.65 0)
+			(at 40.64 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8075,7 +8035,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 21.59 132.08 0)
+		(at 40.64 124.46 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8084,7 +8044,7 @@
 		(fields_autoplaced yes)
 		(uuid "3cf0f7e6-5e1b-4518-a264-93171fb9aa05")
 		(property "Reference" "#PWR044"
-			(at 21.59 135.89 0)
+			(at 40.64 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8093,7 +8053,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 21.59 127 0)
+			(at 40.64 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8101,7 +8061,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 21.59 132.08 0)
+			(at 40.64 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8110,7 +8070,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 21.59 132.08 0)
+			(at 40.64 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8119,7 +8079,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 21.59 132.08 0)
+			(at 40.64 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
