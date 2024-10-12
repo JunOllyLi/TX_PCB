@@ -1,3 +1,4 @@
+NOTE: the latest PCB had been manufactured was v2.0. But it had the Gimbal ZH-connector reversed. The schematics and PCB drawing had been updated to v2.1 to fix that. But v2.1 had not been really manufactured yet.
 
 By default, Muffin is designed to use FlySky hall gimblal, over UART. However, if any other gimbals can be used with two wires (4 including GND and 3.3V), SW can be modified to use that.
 
